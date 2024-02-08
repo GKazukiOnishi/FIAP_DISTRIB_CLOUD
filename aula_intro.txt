@@ -1,0 +1,41 @@
+Computação Paralela (Distribuída)
+	Forma de ter um super computador sem ter um
+	
+	Lei de Moore - A cada 18 ou 24 meses a capacidade de processamento dobra.
+	
+	1980 - PCs com capacidade de processamento considerável
+		PCs conectando em rede ...
+	
+		Surgem então os Sistemas Distribuídos
+	
+	Sistemas Distribuídos
+		Referência - Sistemas Distribuídos - Princípios e paradigmas - Tanenbaum
+					 Sistemas Distribuídos - Conceitos e Projeto - Coulouris
+	
+Introdução:
+	
+	Dos PCs em LAN e WAN surgiram os sistemas distribuídos
+	
+	PCs usando a internet para acessar armazenamento, processamento e execução
+	Google criando um sistema de arquivos distribuídos para indexar
+	Steam com recorde de usuários simultâneos
+	Starlink com 800.000 computadores rodando linux nos satélites ao redor da Terra
+	Bancos
+	
+Conceitos Gerais
+	Definição de Sistema Distribuído:
+		Aquele que se apresenta como sistema centralizado mas funciona em diversas CPUs independentes
+		Estabilidade - Se algum componente quebra o sistema todo não cai
+		Para nós só estamos usando o sistema, mas não sabemos onde está
+	
+		Computadores conectados em rede que se comunicam e coordenam suas ações
+			- Os componentes não precisam estar próximos entre si, não há limite
+			- Para os usuários é uma entidade única, mesmo que funcionem em computadores diferentes de locais diferentes
+			
+		Ou seja: Conjunto de computadores independentes que se apresenta a seus usuários como um sistema único e coerente
+	
+	
+	
+	
+	
+	
