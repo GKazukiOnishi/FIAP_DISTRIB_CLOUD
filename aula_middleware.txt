@@ -1,0 +1,65 @@
+Middleware
+	Fornece uma visão única de sistema ao trabalhar como camada intermediária dentre vários componentes diferentes
+	Camada de software entre a camada de aplicação e SO (que por si oculta o hardware).
+	
+	Temos quatro soluções de Middleware principais:
+		* CORBA
+		* Webservices (SOAP e REST)
+		* Java RMI (remote Method Invocation)
+		* DCOM (Distributed Componente Object Model) da Microsoft
+	
+	(Lembrando, processo é composto por: Contexto de software, Contexto de Hardware e Espaço de Endereçamento)
+	
+	Todas usam os procedimentos remotos (RPC - Remote Procedure Call)
+		Ele permite que um processo acesse o espaço de endereçamento de outro processo
+		
+		Cliente consegue chamar um procedimento remoto que vai para um servidor, por exemplo, que depois vai devolver para o cliente
+		RPC é popular para o modelo cliente-servidor de computação distribuída
+		
+		Cliente: Aplicação, Cliente RPC, Biblioteca RPC, Transporte (Entra e Sai, conecta e desconecta)
+		Servidor: Aplicação diferente, Servidor RPC, Biblioteca RPC, Transporte (Fica ouvindo chamadas e esperando)
+		
+		Ex: Cliente pede uma soma remotamente, ele só pede e acaba passando pelo Middleware
+			Lá no Servidor isso chega, ele atende à requisição e depois devolve
+			
+			Eles não sabem toda a navegação que existe, compactação, descompactação, transporte etc.
+		
+	CORBA (Common Object Request Broker Arquitecture)
+		Ideia de Corretor, você fala com ele e as coisas acontecem
+		
+		Client faz a requisição ao ORB, que chama a Object Implementation para atender à requisição
+	
+	Java RMI (Remote Method Invocation)
+		Server implementa métodos, Service Object
+		Ele publica então no RMI Registry
+		O Cliente pensa no que precisa e procura por ele em um catálogo, no caso, no RMI Registry
+		Descobrindo um serviço que atenda ao que deseja e pega a interface para interagir com ele.
+			Entrada, parâmetros, tipo
+		E depois invoca o método remotamente do Server
+	
+	SOAP (Simple Object Access Protocol)
+		Serviços Web, Web Services
+		Arquitetura orientada a serviços
+		Especificado pelo W3C
+		Um grande arquivo XML que trafega na rede, oferecendo interface para se comunicar com ele
+		Construímos então um arquivo XML seguindo a especificação e fazemos a requisição
+			Trabalha com <soap:Envelope>, <soap:Body> <soap:Header> etc.
+		Por ser muito verboso e espaçoso perdeu espaço para o REST
+	
+	REST (Representational State Transfer)
+		Se baseia nos métodos HTTP (GET, POST, PUT e DELETE)
+		Vai direto ao assunto comparado ao SOAP
+		Restful -> Serviço contruído usando técnicas e padrões REST
+	
+	DCOM (Distributed Componente Object Model)
+		API .NET Remoting, produto da Microsoft
+		Como em tempo de execução o client descobre a interface do Server
+		
+		Todo componente implementa
+			QueryInterface -> Permite que o client consiga encontrar as especificações do Server
+			AddRef -> Cliente se conecta
+			Release -> Cliente se desconecta
+		
+		
+	
+		
