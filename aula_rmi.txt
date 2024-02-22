@@ -1,0 +1,33 @@
+Java RMI (Remote Method Invocation)
+	Execução de chamadas de procedimentos remotos no estilo RPC (remote Procedure Call)
+	É possível alcançar esses métodos através da rede
+	
+	Aplicação do tipo -> Aplicação de Objeto Distribuído
+	
+	Pacote Java: java.rmi.*
+		Interfaces devem extender a classe Remote e os métodos devem tratar a RemoteException
+		Porta default 1099
+		No lado Server trabalham com a classe UnicastRemoteObject, que permite exportar a interface para o Registro RMI
+			Que cria um serviço aguardando conexões com clientes de forma pública
+	
+		rmi://[host_name]:[port_number]/[service_name]
+	
+		Cliente localiza usando a LocateRegistry estáticamente e usando o lookup(), que aceita a URL e retorna a referência
+			remota para o objeto do serviço
+	
+		Client Host
+			Server Object Interface
+			Client Program (solicita lookup para obter o server stub)
+			Server Stub (se comunica com o Server Skeleton)
+		
+		Server Host
+			Server Object Interface
+			Server Skeleton
+			Server Object -> popula RMI Registry
+		
+		Gerenciador de Referências remotas
+			Se comunicam pela camada de transporte RMI
+		
+		Obs: Antes tinha uma ferramente (rmic) da JDK que sabia gerar as classes Skeleton e Stub automaticamente
+		
+		
