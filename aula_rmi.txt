@@ -28,6 +28,6 @@ Java RMI (Remote Method Invocation)
 		Gerenciador de Referências remotas
 			Se comunicam pela camada de transporte RMI
 		
-		Obs: Antes tinha uma ferramente (rmic) da JDK que sabia gerar as classes Skeleton e Stub automaticamente
+		Obs: Antes tinha uma ferramente (rmic) da JDK que sabia gerar as classes Skeleton e Stub, hoje em dia é automaticamente
 		
 		
