@@ -9,3 +9,4 @@ Permite fazer upgrade horizontal, com os cluster de máquinas, só aumentar a qt
 
 > Abstração do hardware, uma camada de software que simula uma infraestrutura física, entre o hardware (real) e o SO
 
+![Imagem representando as camadas da virtualização](./img/camada_virtualizacao.png)
