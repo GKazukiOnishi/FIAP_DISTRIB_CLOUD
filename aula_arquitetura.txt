@@ -1,0 +1,77 @@
+Arquiteturas
+	Para suportar sistemas distribuídos devem ser projetados para aguentar muitas ameaças e dificuldades
+		* Variados modos de uso:
+			Variações de carga de trabalho
+			Milhões de acesso
+			Componentes desconectados
+			Novos componentes
+			Grande largura de banda
+		* Variedade de ambientes de sistema:
+			Hardware, SO, redes heterogêneas
+			Diferença de desempenho de redes
+			Dezenas ou milhares de computadores
+		* Problemas internos:
+			Relógios não sincronizados
+			Conflito de dados
+			Falhas de componentes
+		Multimídia é um exemplo que tem vários desses problemas
+	
+	Como atender todas essas demandas, ser escalável, ser confiável, adaptável?
+	
+	Originalmente o termo refere-se ao software, com a sua camada de serviços (antes ainda processos) 
+		em que diversas tarefas podem ser executadas em um mesmo computador
+	
+	Plataforma: Camada lógica e de hardware de nível mais baixo que as aplicações
+		Cada computador com uma implementação independente, 
+		Facilita o uso do sistema para os processos
+		Composto por: Camadas de SO + Hardware
+	Componentes: Uma arquitetura tem vários componentes conectados que trocam dados entre si e se configuram de uma certa forma.
+		Unidade modular com suas interfaces e substituível dentro do ambiente.
+	Conector: Mediador de comunicação entre os componentes
+		Para chamadas remotas, fluxo de dados, troca de mensagem
+	
+	Com os componentes e conectores temos diferentes modelos de arquitetura:
+		Em Camadas:
+			Ex: Caixa eletrônica do banco Caixa
+		
+			Camada de apresentação - Tela
+			Camada de controle - Controla o que acontece de acordo com a situação e interação do usuário
+			Camada de regra de negócios - Faz validações, chamadas, cálculos, regras
+			Camada de acesso a dados - Armazena, persiste, integra
+		Em objetos:
+			Ex: World of Warcraft
+				Mais objetos para iterações intensas, menos para o contrário
+				Objetos para cada jogador, personagem etc.
+			Em geral para soluções de grande porte, Ex: jogos MMORPG
+		Centrada em Dados:
+			Ex: e-commerce
+			O tempo todo consumindo dados, ver informações, ver detalhes, salvar informações
+			Repositório de dados acessado o tempo todo pelo Server/Client
+		Em Eventos:
+			Ex: LinkedIn, Slack
+			Alguém faz algo e você recebe atualização
+			Espera eventos para processar algo
+		Cliente-Servidor:
+			É a mais conhecida
+			Amplamente empregada
+			Temos aqueles que são clientes e os que são servidores
+			Clientes interagindo com servidores
+			Ex: DNS
+				Clientes consultam o servidor com o DNS para obter o IP a partir de um nome
+			
+			Modificações:
+				* Partição dos dados pela replicação de servidores colaborativos
+				* Armazenamento de dados em cache por meio de servidores proxies
+				* Uso de dispositivos móveis
+			Ex: Servidor Proxy
+				"Representante", cliente solicita para ele e ele retorna
+				* Desempenho - Aguenta solicitações de vários usuários
+				* Filtragem - Não retorna qualquer url
+				* Anonimato - Acessa de forma anônima como se fosse o servidor proxy
+		Peer-to-peer:
+			Tenta acompanhar a demanda imposta ao sistema
+			Não temos papéis de cliente e server, todas as máquinas são do mesmo papel
+			Cada nova máquina que entra na arquitetura é um peer
+			Máquinas trocam informações entre si, para não sobrecarregar o servidor
+			Ex: Torrent
+
