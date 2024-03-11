@@ -14,6 +14,10 @@ Computação Paralela (Distribuída)
 	
 Introdução:
 	
+	2 Grandes Avanços:
+		1. Surgimento de PCs com capacidade de processamento considerável
+		2. Surgimento de redes de alta velocidade conectando os componentes
+
 	Dos PCs em LAN e WAN surgiram os sistemas distribuídos
 	
 	PCs usando a internet para acessar armazenamento, processamento e execução
