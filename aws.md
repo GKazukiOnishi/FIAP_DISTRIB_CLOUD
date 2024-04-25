@@ -9,3 +9,4 @@ sudo apt-get update
 sudo apt-get install python3.10-venv (virtual enviroment - podemos adicionar dependências facilmente)
 
 ```
+6. Depois lembrar de dar stop na instância e no Lab
