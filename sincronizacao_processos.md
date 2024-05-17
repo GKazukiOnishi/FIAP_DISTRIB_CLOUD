@@ -29,6 +29,7 @@ Computadores podem receptores agregados podem sincronizar seus relógios com ess
 ## Método de Cristian
 Uso de um servidor de tempo conectado a um dispositivo de fonte UTC para sincronizar os computadores.  
 Esse método acaba dependendo do tempo de viagem de ida e volta observados entre cliente e servidor, que quando são suficientemente curtos em comparação com a precisão exigida, acaba sendo suficiente.  
+Além disso, quando temos uma concorrência enorme, sempre haverá uma diferença  
 
 ## Algoritmo de Berkeley
 O servidor de tempo é ativo e fica requisitando o tempo do relógio local de cada computador, de forma que a média desses tempos seria o tempo do sistema distribuído e então ele informa como cada computador pode ajustar seu relógio para bater com o valor.
