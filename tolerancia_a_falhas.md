@@ -5,12 +5,12 @@ Sistemas Distribuídos precisam estar preparados para falhas, evitando que a sit
 * Disponibilidade
     * Estar disponível para seus serviços
     * Probabilidade do sistema estar funcionamento em qualquer momento
-    * Definida em instantes de tempo
+    * Definida em **instantes de tempo**
         * Se fica fora do ar por um milissegundo a cada hora de operação, temos uma disponibilidade de mais de 99,9999%
 * Confiabilidade
     * Fornecer os serviços conforme especificado
     * Probabilidade do sistema estar funcionando
-    * Definida como o intervalo de tempo em que o sistema estará funcionando sem interrupção
+    * Definida como o **intervalo de tempo** em que o sistema estará funcionando **sem interrupção**
         * Se fica fora do ar por um milissegundo a cada hora de operação, temos uma confiabilidade baixa.
         * Se o sistema nunca cai, mas é desligado por duas semanas, ele tem alta confiabilidade, mas só 96% de disponibilidade
 * Segurança
