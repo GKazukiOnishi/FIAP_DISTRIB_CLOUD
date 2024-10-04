@@ -55,5 +55,8 @@ Alunos:
     * (E) problema imediato  
 **Resposta: Alternativa (A)**
 
-7. (1,0 ponto) Considere que um sistema seja constituído por três componentes montados em série que funcionam de forma independente. Para cada um desses componentes, a probabilidade de que uma falha ocorra até o tempo t é dada pela expressão abaixo (t > 0). Como os componentes são montados em série, o sistema falha caso qualquer um dos três componentes falhe. Considerando a situação apresentada, qual é a probabilidade de que o sistema falhe até o tempo t?
+7. (1,0 ponto) Considere que um sistema seja constituído por três componentes montados em série que funcionam de forma independente. Para cada um desses componentes, a probabilidade de que uma falha ocorra até o tempo t é dada pela expressão abaixo (t > 0). Como os componentes são montados em série, o sistema falha caso qualquer um dos três componentes falhe. Considerando a situação apresentada, qual é a probabilidade de que o sistema falhe até o tempo t?  
 ![alt text](img_q_7.png)
+$\frac{1}{\sqrt{2\pi}}+(1+x)^2$
+
+https://en.wikibooks.org/wiki/LaTeX/Mathematics
