@@ -33,7 +33,7 @@ Alunos:
     * (E) KPI (Key Performance Indicator)  
 **Resposta: Alternativa (B)** - Regra dos Nove. Representam os famosos 99.99% de disponibilidade que os sistemas garantem ao vender o seu produto.
 
-4. (1,0 ponto) Na figura abaixo, tem-se alguns exemplos de sistemas nos quais, se “algo” deixar de funcionar corretamente durante um certo tempo, nada de catastrófico deve acontecer. Em inglês, sistemas deste tipo são chamados de: 
+4. (1,0 ponto) Na figura abaixo, tem-se alguns exemplos de sistemas nos quais, se “algo” deixar de funcionar corretamente durante um certo tempo, nada de catastrófico deve acontecer. Em inglês, sistemas deste tipo são chamados de:  
 ![alt text](img_q_4.png)
     * (A) no fail-operational systems
     * (B) security-critical systems
@@ -50,7 +50,7 @@ Alunos:
     * (E) o computador não conseguir dar boot é uma disfunção  
 **Resposta: Alternativa (B)**, pois o problema na fonte de alimentação é uma falha, ou seja, a causa do problema, e não uma disfunção (aquilo que percebemos por conta do problema, já que não percebemos visualmente o problema na fonte de alimentação).
 
-6. (1,0 ponto) Considerando-se a figura abaixo, conhecida como “curva da banheira”, a situação na qual um componente eletrônico de um equipamento apresente uma falha na região A–B é chamada de: 
+6. (1,0 ponto) Considerando-se a figura abaixo, conhecida como “curva da banheira”, a situação na qual um componente eletrônico de um equipamento apresente uma falha na região A–B é chamada de:  
 ![alt text](img_q_6.png)
     * (A) mortalidade infantil
     * (B) erro precoce
