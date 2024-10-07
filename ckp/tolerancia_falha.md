@@ -1,7 +1,11 @@
 # Checkpoint - Tolerância a Falha em Sistemas Distribuídos
+Professor: **Sérgio Ricardo Rota**.  
 Alunos:
-* Gabriel Kazuki Onishi. RM 87182.
-* ...
+* **Gabriel Kazuki Onishi. RM 87182.**
+* **Breno de Souza Silva. RM 88332.**
+* **Felipe Otto da Silva. RM 89108.**
+* **Pedro Martins Procopio Argentati. RM 88246.**
+* **Rafael Tannous. RM 87486.**
 
 ## Questões
 
@@ -11,7 +15,7 @@ Alunos:
     * (C) transparência de acesso e transparência de concorrência
     * (D) transparência de migração e transparência de concorrência
     * (E) transparência de acesso e transparência de replicação  
-**Resposta: Alternativa (B)**, pois as transparências de replicação e relocação permitem com que, em caso de falha, outras instâncias da mesma aplicação sejam acionadas para responder aos usuários, portanto, envolvendo uma replicação e a relocação do recurso em uso pelo usuário.
+**Resposta: Alternativa (E)**, pois as transparências de acesso e replicação permitem com que, em caso de falha, outras instâncias da mesma aplicação sejam acionadas para responder aos usuários, portanto, envolvendo uma replicação para manter a aplicação funcionando, e um acesso transparente ao recurso sem que o usuário perceba a falha.
 
 2. (1,0 ponto) Sobre um determinado sistema que fica fora do ar por um milissegundo a cada hora, pode-se afirmar que:
     * (A) Trata-se de um sistema de alta confiabilidade, mas disponibilidade muito baixa.
@@ -26,7 +30,7 @@ Alunos:
     * (B) Regra dos Nove
     * (C) Kaizen
     * (D) Programa 5S
-    * (E) KPI (Key Performance Indicator) 
+    * (E) KPI (Key Performance Indicator)  
 **Resposta: Alternativa (B)** - Regra dos Nove. Representam os famosos 99.99% de disponibilidade que os sistemas garantem ao vender o seu produto.
 
 4. (1,0 ponto) Na figura abaixo, tem-se alguns exemplos de sistemas nos quais, se “algo” deixar de funcionar corretamente durante um certo tempo, nada de catastrófico deve acontecer. Em inglês, sistemas deste tipo são chamados de: 
@@ -56,7 +60,40 @@ Alunos:
 **Resposta: Alternativa (A)**
 
 7. (1,0 ponto) Considere que um sistema seja constituído por três componentes montados em série que funcionam de forma independente. Para cada um desses componentes, a probabilidade de que uma falha ocorra até o tempo t é dada pela expressão abaixo (t > 0). Como os componentes são montados em série, o sistema falha caso qualquer um dos três componentes falhe. Considerando a situação apresentada, qual é a probabilidade de que o sistema falhe até o tempo t?  
-![alt text](img_q_7.png)
-$\frac{1}{\sqrt{2\pi}}+(1+x)^2$
+    ### Fórmula:  $\frac{1}{\sqrt{2\pi}}e^{-\frac{t}{2}}$
+    Dado que os componentes são montados em série, caso um dos componentes falhe todos os demais falham também. Portanto: A probabilidade do sistema falhar até o tempo t é igual a:  
+    * Componente 1 Falha Ou Componente 2 Falhar Ou Componente 3 Falhar  
+    * Ou seja, podemos apenas somar a fórmula que calcula a probabilidade 3 vezes
+    * **Resposta:** $3(\frac{1}{\sqrt{2\pi}}e^{-\frac{t}{2}})$
 
-https://en.wikibooks.org/wiki/LaTeX/Mathematics
+8. (1,0 ponto) A lâmina de corte da impressora de comprovantes de um caixa eletrônico foi retirada de operação para ser analisada em laboratório, com o auxílio de um microscópio eletrônico de transmissão de alta resolução. Em relação à manutenibilidade de um sistema, assinale a alternativa que melhor descreve este procedimento:  
+![alt text](img_q_8.png)
+    * (A) ação preditiva
+    * (B) manutenção preventiva
+    * (C) manutenção planejada
+    * (D) manutenção corretiva
+    * (E) reparo  
+**Resposta: Alternativa (B)**
+
+9. (1,0 ponto) Os princípios fundamentais de confidencialidade, integridade e disponibilidade de dados fornecem uma diretriz para que o(a) especialista em segurança cibernética priorize ações ao proteger qualquer sistema distribuído. Neste contexto, considere as seguintes afirmações:  
+    - (1) Impede a divulgação de informações a pessoas, recursos ou processos não
+    autorizados.
+    - (2) Refere-se à precisão, consistência e confiabilidade dos dados.
+    - (3) Garante que as informações sejam acessíveis por usuários autorizados quando
+necessário.     
+  
+    Assinale a alternativa que relaciona corretamente as afirmações (1), (2) e (3) aos
+conceitos de confidencialidade, integridade e disponibilidade: 
+    - (A) (1) - confidencialidade, (2) - integridade e (3) - disponibilidade
+    - (B) (1) - confidencialidade, (3) - integridade e (2) - disponibilidade
+    - (C) (2) - confidencialidade, (1) - integridade e (3) - disponibilidade
+    - (D) (3) - confidencialidade, (2) - integridade e (1) - disponibilidade
+    - (E) (3) - confidencialidade, (1) - integridade e (2) - disponibilidade  
+**Resposta: Alternativa (A)**.
+
+10. (1,0 ponto) A disponibilidade refere-se à possibilidade de um usuário válido conseguir utilizar um sistema sempre que necessário. Em relação às opções abaixo, indique “SIM” se achar que tal opção pode afetar a disponibilidade de um sistema; caso contrário, indique “NÃO”: 
+    * (A) manutenção de equipamentos: **SIM**
+    * (B) ataques cibernéticos: **SIM**
+    * (C) desastre natural: **SIM**
+    * (D) falha de equipamento: **SIM**
+    * (E) negação de serviço: **SIM** 
